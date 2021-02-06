@@ -1,0 +1,9 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.block {
+  outline: 1px dashed red;
+}
+/*# sourceMappingURL=style.css.map */
