@@ -1,9 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: firebrick;
+}
+
 .wrapper {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 12;
+      grid-template-columns: 12;
+  grid-gap: 20px;
 }
 
 .block {
-  outline: 1px dashed blue;
+  min-height: 100px;
+}
+
+.block1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  grid-column: 1/12;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-color: orange;
+}
+
+.block2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: blue;
+  grid-gap: 20px;
+  height: 500px;
+}
+
+.block3 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 8;
+  grid-column: 4/12;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: green;
+  color: white;
+}
+
+.block4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  grid-column: 1/12;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-color: yellow;
 }
 /*# sourceMappingURL=style.css.map */
